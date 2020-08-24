@@ -23,6 +23,7 @@
       ScrollReveal({ reset: false });
     </script>
   </head>
+  
   <!-- Follow the HTML instructions to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
@@ -79,7 +80,6 @@
       </div>
     </section>
     <!-- /END About Section -->
-
     <!-- **** Projects Section **** -->
     <section id="projects">
       <div class="container">
@@ -87,7 +87,35 @@
           <h2 class="section-title dark-blue-text">
             Projects
           </h2>
-
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Face Locator</h3>
+                <div>
+                  <p class="mb-4">
+                    This app uses an AI API to locate human faces in images. It allows for unique user registration and profile storage through PostgreSQL integration. Made from scratch with React and Express and deployed at Heroku.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://facelocator.herokuapp.com">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/mlshohet/face-detection">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://facelocator.herokuapp.com" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/facerec.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
           <!-- Each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
@@ -125,13 +153,13 @@
                 <h3 class="project-wrapper__text-title">Face Locator</h3>
                 <div>
                   <p class="mb-4">
-                    This app uses an AI API to locate human faces in images. It allows for unique user registration and profile storage through PostgreSQL integration. Made from scratch with React and Express.
+                    A fully responsive image searcher. Uses CSS, React.js and Redux. State management workshop. Scrapes and manipulates APIs for content.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="https://facelocator.herokuapp.com">
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://mlshohet.github.io/robobook/">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/mlshohet/face-detection">
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/mlshohet/robobook">
                   Source Code
                 </a>
               </div>
@@ -140,13 +168,14 @@
               <div class="project-wrapper__image">
                 <a href="https://facelocator.herokuapp.com" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/facerec.jpg" />
+                    <img class="img-fluid" src="./assets/robobook.jpg" />
                   </div>
                 </a>
               </div>
             </div>
           </div>
           <!-- /END Project -->
+          
         </div>
       </div>
     </section>
